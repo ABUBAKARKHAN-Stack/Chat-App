@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #121212;
+    font-family: 'Roboto', sans-serif;
+    color: #E0E0E0;
+}
+
+section.container {
+    width: 900px;
+    max-width: 90%;
+    background: #1E1E1E;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+@media  (max-width: 300px) {
+  .brand{
+    flex-direction: column;
+  }
+  .message__area{
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+}
+
+
+.brand {
+    padding: 20px;
+    background: #282828;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px #00feba;
+    color: #E0E0E0;
+    margin-left: 10px;
+}
+
+.message__area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 40px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #333;
+    color: #E0E0E0;
+    border-top: 1px solid #ffffff;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    /* Ensure text wraps within the message box */
+    overflow-wrap: break-word;
+    /* Ensure text wraps within the message box */
+}
+
+.incoming {
+    background: #3730A3;
+    color: #fff;
+}
+
+.outgoing {
+    background: #424242;
+    color: #E0E0E0;
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #B0BEC5;
+    font-size: 14px;
+}
